@@ -7,6 +7,6 @@ jobs:
     strategy:
         matrix:
          os: [ubuntu-latest]
-    uses: amiguelGH/video-fsm-tres/.github/workflows/workflow_call.yml@main
+    uses: amiguelGH/video-fsm-tres-reusable-action/.github/workflows/workflow_call.yml@main
     with:
       runner: ${{ matrix.os }}
