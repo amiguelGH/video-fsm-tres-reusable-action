@@ -15,7 +15,7 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: inputs.runner
-      echo ::set-output name=runs-on::$runs-on
+       echo "${{ runs-on }}"
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
