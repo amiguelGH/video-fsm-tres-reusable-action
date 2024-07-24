@@ -14,8 +14,8 @@ permissions:
   
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
-       echo "este es el runner ${{ inputs.runner }}"
+    runs-on: ${{ inputs.runner }}
+       echo "este es el runner ${{ runs-on }} ..1.. $runs-on ..2..   runs-on"
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
