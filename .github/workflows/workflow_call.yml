@@ -1,4 +1,4 @@
-name: Node.js Package
+name: workflow_call Node.js Package
 
 on:
   workflow_call:
