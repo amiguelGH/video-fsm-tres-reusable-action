@@ -1,10 +1,12 @@
+name: reutilizando accion-simple-compuesta Node.js CI 
 on:
-  workflow_call
+  workflow_dispatch:
+  push:
 jobs:
-  ReuseableMatrixJobForDeployment:
+  test:
     strategy:
-      matrix:
-        target: [dev, stage, prod]
-    uses: amiguelGH/video-fsm-tres/.github/workflows/deploy-git-pages.yml@main
+        matrix:
+         os: [ubuntu-latest]
+    uses: amiguelGH/video-fsm-tres/.github/workflows/workflow_call.yml@main
     with:
-      target: ${{ matrix.target }} 
+      runner: ${{ matrix.os }}
