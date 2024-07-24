@@ -1,7 +1,6 @@
 name: reutilizando accion-simple-compuesta Node.js CI 
 on:
   workflow_dispatch:
-  push:
 jobs:
   test:
     strategy:
