@@ -11,11 +11,11 @@ permissions:
   id-token: write
   contents: read
   pages: write
+
   
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-       echo "este es el runner ${{ runs-on }} ..1.. $runs-on ..2..   runs-on ..3.. ${{ inputs.runner }}"
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
