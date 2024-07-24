@@ -1,4 +1,4 @@
-name: Node.js Package
+name: deploy-github-pages-base.yml Node.js Package
 
 on:
   workflow_call:
